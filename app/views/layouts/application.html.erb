@@ -19,8 +19,10 @@
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><span class="nav-link px-2 text-secondary"><%= link_to "Главная страница", home_path %></span></li>
-          <li><span class="nav-link px-2 text-secondary"><%= link_to "Про нас", about_path %></span></li>
+          <li><span>
+            <%= link_to "Главная страница", home_path, :class => "nav-link px-2 text-secondary" %></span></li>
+          <li><span>
+            <%= link_to "Про нас", about_path, :class => "nav-link px-2 text-white" %></span></li>
 
         </ul>
 
@@ -29,7 +31,7 @@
         </form>
 
         <div class="text-end">
-          <span class="btn btn-outline-light me-2"><%= link_to "Добавление статьи", new_post_path %></span>
+          <span><%= link_to "Добавление статьи", new_post_path, :class => "btn btn-outline-light me-2" %></span>
         </div>
       </div>
     </div>
